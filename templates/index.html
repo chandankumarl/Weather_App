@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta http-equiv="refresh" content="1"> -->
+    <title>Weather App</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+    <div class="card">
+        <div class="card-info">
+            <p id="country" class="card-content">Afghanistan</p>
+            <p id="location" class="card-content">Hoskote</p>
+            <p id="date" class="card-content">28-10-2024 IST</p>
+        </div>
+        <div class = "card-weather">
+            <img id="day" src="" alt="" class="card-weather-icon">
+            <p class="card-weather-desc" id="day-desc">Cloudy</p>
+        </div>
+        <div class="card-weather">
+            <img id="night" src="https://developer.accuweather.com/sites/default/files/01-s.png" alt="" class="card-weather-icon">
+            <p class="card-weather-desc" id="night-desc">Thunderstorm</p>
+        </div>
+    </div>
+    <script src="{{url_for('static',filename='js/script.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
